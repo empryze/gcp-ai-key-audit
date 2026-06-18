@@ -190,7 +190,7 @@ Validate changes in a staging/preprod project before production.
 MIT. See [LICENSE](LICENSE).
 
 ```
-Copyright (c) 2026 <DUKE LEE / EMPRYZE>
+Copyright (c) 2026 EMPRYZE
 ```
 
 ## Disclaimer

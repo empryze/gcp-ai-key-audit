@@ -50,9 +50,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - CRITICAL/MEDIUM/LOW/REVIEW findings; text, CSV, and JSON output.
 - `--fail-on-critical` for CI gating.
 
-[1.2.0]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.2.0
-[1.1.3]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.1.3
-[1.1.2]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.1.2
-[1.1.1]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.1.1
-[1.1.0]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.1.0
-[1.0.0]: https://github.com/<you>/gcp-ai-key-audit/releases/tag/v1.0.0
+[1.2.0]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.2.0
+[1.1.3]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.1.3
+[1.1.2]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.1.2
+[1.1.1]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.1.1
+[1.1.0]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.1.0
+[1.0.0]: https://github.com/empryze/gcp-ai-key-audit/releases/tag/v1.0.0
