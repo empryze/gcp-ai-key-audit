@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y shellcheck jq
+
+      - name: Syntax check
+        run: bash -n gcp-ai-key-audit.sh
+
+      - name: ShellCheck
+        run: shellcheck --severity=warning gcp-ai-key-audit.sh tests/discovery_test.sh
+
+      - name: Discovery unit tests
+        run: bash tests/discovery_test.sh

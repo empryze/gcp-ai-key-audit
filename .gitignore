@@ -1,0 +1,15 @@
+# Local report exports
+*.csv
+*.json
+audit.*
+
+!examples/*.csv
+!examples/*.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/

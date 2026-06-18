@@ -1,0 +1,21 @@
+$ ./gcp-ai-key-audit.sh --org 123456789012
+discovering projects (mode: recursive) under org 123456789012...
+discovered 38 project(s)
+checking org policy (SA-key binding)...
+[1/38] scanning example-dev...
+[7/38] scanning example-prod...
+    AI enabled (aiplatform.googleapis.com) — inspecting keys...
+    inspected 4 key(s)
+... (remaining projects) ...
+scan complete; rendering report
+
+=== example-prod ===
+  [MEDIUM]   Android key (auto created by Firebase) (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) [standard] — over-broad scope (no/Google-Cloud-APIs-bundle restriction); cannot reach Vertex (needs SA binding) but can call key-accepting APIs. Scope to only what it needs
+  [low]      Android key (auto created by Firebase) (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) [standard] — no effective application restriction (referrer/IP/app allowlist is empty) -> usable from anywhere if leaked
+  [MEDIUM]   Browser key (auto created by Firebase) (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) [standard] — over-broad scope (no/Google-Cloud-APIs-bundle restriction); cannot reach Vertex (needs SA binding) but can call key-accepting APIs. Scope to only what it needs
+  [low]      Browser key (auto created by Firebase) (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) [standard] — no effective application restriction (referrer/IP/app allowlist is empty) -> usable from anywhere if leaked
+
+=== sys-00000000000000000000000000 ===
+  [skipped]  no access or no enabled services
+
+Summary: 0 CRITICAL, 4 MEDIUM.
